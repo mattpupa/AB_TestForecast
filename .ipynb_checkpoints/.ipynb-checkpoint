@@ -1,0 +1,48 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# A/B Test Forecast\n",
+    "\n",
+    "This model will help predict whether or not the included A/B test will be successful. The success metrics in this model are incremental conversions which are statistically significant.\n",
+    "\n",
+    "Based on the data gathered from past entries in the test, this model preducts how the conversion rate is expected to trend for all past test entries once they have matured 56 days into their trail. The predicted conversion rate for the past entries is combined with the visitor-to-trial rate from past entries to come up with a predicted visitor-to-convert for past entries of the test. Once the predicted results for past data are complete, the same assumptions are applied to any future entries that might enter the test.\n",
+    "\n",
+    "Users have the ability to select different inputs for future entries, and the predicted results from future entries are combined with the predicted results from the past entries to form an overall predicted result of the test. This model has a few assumptions built in...\n",
+    "\n",
+    "1. The model allows for up to 4 groups in a test\n",
+    "2. The model allows historical entries for up to 6 weeks"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
